@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplicacion siete</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app7.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/ii.jpg','imagenes/k.jpg','imagenes/ceee.jpg','imagenes/t.jpg','imagenes/mayy.jpg','imagenes/p.jpg','imagenes/ign.jpg','imagenes/mig.jpg')">
+<div data-role="page" id="Principal" data-theme="a" >
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>5 de mayo </h1>
+   </div>
+   <div data-role="main" class="ui-content" >
+      <div data-role="collapsible" data-content-theme="false" >
+         <h1>Fotografia</h1>
+          <div>
+          <p> Esta la imagen:
+          <br>
+          </div>
+        <div>
+          <img src="imagenes/2.jpg" width=">50%" height="50%" ></div>
+          </div>
+          </div>
+          
+       <div>
+   <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>ORIGEN</h2>
+   <p>Se muestra el origen d ela batalla </p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>PERSONAJES  PARTICIPANTES</h2>
+<p>Se muestran los participantes</p>
+</a>
+</li>
+<li clas="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>DESARROLLO</h2>
+<p>Muestra el desarrollo de la batalla </p>
+  </a>
+  </li>
+ <li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>CONCLUSION</h2>
+<p>Muestra una breve descripcion</p>
+</a>
+</li>
+     <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>CUATRO DE MAYO</h2>
+    <p>Muestra un acontecimiento de el dia 4 de mayo </p>
+    </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>COMO SE CELEBRA</h2>
+<p>Muestra como se celebra en la ctualidad</p>
+</a>
+</li>
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+<div>
+<h4>Aplicacion siete</h4>
+  
+ </div>
+<div>
+  <img src="imagenes/mdpi.png" width="46" height="46">
+  <h4>NOHEMI PEREZ PAREDES</h4>
+  </div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>ORIGEN</h1>
+    </div>
+   <div data-role="content" align="center">
+   <div>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('origen','','imagenes/ii.jpg',1)"><img src="imagenes/i.jpg" width="50%" height="50%" id="origen"></a>
+<p>En un principio la Alianza Tripartita aceptó el llamado al diálogo de Benito Juarez y sus representantes se reunieron con Manuel Doblado, ministro de Relaciones Exteriores del gobierno mexicano, quien consiguió que Juan Prim, representante español, y Lord John Russell por Inglaterra se retiraran. A este acuerdo se le conoce como los Tratados Preliminares de la Soledad.</p>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:960px;height:100px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+<p>  El 5 de marzo, cuando aún se realizaban las negociaciones de los Tratados de la Soledad, llegó a Veracruz un contingente militar francés bajo el mando de Charles Ferdinand Latrille, conde de Lorencez. A finales de abril, Lorencez desconoció los Tratados de Soledad y se puso en marcha, junto con sus efectivos, hacia Puebla, con el fin último de conquistar la Ciudad de México.</p>
+  <a href="https://webadictos.com/2015/05/04/historia-de-la-batalla-de-puebla-5-de-mayo/" > Dar click aquí</a>
+  <br>
+<img src="imagenes/b.jpg" width="50%" height="50%">
+  </div>
+ </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<h4>Aplicacion siete</h4>
+ </div>
+<div>
+<img src="imagenes/mdpi.png" width="46" height="46">
+  <h4>NOHEMI PEREZ PAREDES</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>PERSONAJES PARTICIPANTES</h1>
+    </div>
+   <div data-role="content" align="center">
+   <div>
+   <img src="imagenes/par.jpg" width="46%" height="46%">
+    <p> De Francia, Charles Ferdinad de Latrille conde de Lorencez. <br>
+     De Mexico, Ignacio Zaragoza, Felipe Berriozabal,Miguel Negrete. <br>
+      <img src="imagenes/de.jpg" width="46%" height="46%">
+      <br>
+      <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('migue','','imagenes/mig.jpg',1)"><img src="imagenes/mi.jpg" width="50%" height="50%" id="migue"></a> <br>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ignacio','','imagenes/ign.jpg',1)"><img src="imagenes/ig.jpg" width="46%%" height="46%%" id="ignacio">
+</a> <br>
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ignacio','','imagenes/ign.jpg',1)">
+    <br>
+    La Batalla de Puebla fue el 5 de mayo de 1862 y ganamos<br>
+      El Sito de Puebla fue del 16 de marzo al 17 de mayo de 1863 y perdimos. <br>
+      Por Francia fue Federico Forey, Juan Nepomuceno Almonte (el hijo de Jose Ma. Morelos y Pavon). <br>
+      <img src="imagenes/hijo.jpg" width="46%" height="46%"></a>
+      <br>
+      <img src="imagenes/fede.jpg" width="46%" height="46%"></a>
+    <p>            
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ignacio','','imagenes/ign.jpg',1)">Por Mexico, Jesus Gonzalez Ortega, Felipe Berriozabal, Porfirio Diaz, Miguel Negrete.<br>
+  <img src="imagenes/fede.jpg" width="46%" height="46%">
+    </a> <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('porfiriodias','','imagenes/p.jpg',1)">
+    <br>
+    <img src="imagenes/p2.jpg" width="46%" height="46%" id="porfiriodias"></a>        
+    </div>
+   <p><img src="imagenes/feli.jpg" width="46%" height="46%">     </p>
+   <p>La Toma de Puebla o Batalla del 2 de Abril fue en 1867 y ganamos. <br>
+     Por Mexico, Porfirio Diaz. <br> </p>
+     <img src="imagenes/gano.jpg" width="46%" height="46%"></p>
+  </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<h4>Aplicacion siete</h4>
+ </div>
+<div>
+<img src="imagenes/mdpi.png" width="46" height="46">
+  <h4>NOHEMI PEREZ PAREDES</h4>
+  </div>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>DESARROLLO</h1>
+    </div>
+   <div data-role="content" align="center">
+   <div>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('desarrollo','','imagenes/k.jpg',1)"><img src="imagenes/kk.jpg" width="46%" height="46%" id="desarrollo"></a>
+<p>Antes del 5 de Mayo, el día  28 de abril de 1862 tuvo lugar un enfrentamiento conocido como la Batalla de las Cumbres entre el Ejército Expedicionario Francés y el Ejército Mexicano. En este conflicto hubieron cerca de 500 bajas francesas en contra de apenas 50 bajas mexicanas. Pese a esto, el Ejército Expedicionario francés consigue hacerse con el control del Paso de Acultzingo.A las dos y media de la tarde, cuando los mexicanos empezaban a vislumbrar la victoria, Lorencez se dispuso a lanzar el último asalto, dirigiendo a los Cazadores de Vincennes y el Regimiento de Zuavos hacia Guadalupe. Zaragoza dispuso que el Batallón Reforma de San Luis Potosí saliera en auxilio de los fuertes.
+  Luego de ser repelidos por última vez, las fuerzas del Ejército Expedicionario Francés comenzaron a huir completamente dispersados. Se replegaron a la hacienda Los Álamos, para finalmente retirarse hacia Amozoc.</p>
+<img src="imagenes/me.jpg" width="46%" height="46%">
+  </div>
+ </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<h4>Aplicacion siete</h4>
+ </div>
+<div>
+<img src="imagenes/mdpi.png" width="46" height="46">
+  <h4>NOHEMI PEREZ PAREDES</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CONCLUSION</h1>
+    </div>
+   <div data-role="content" align="center">
+   <div>
+    <p> Finalmente, a las 5:49 de la tarde, Zaragoza anuncia la victoria:Las armas del Supremo Gobierno se han cubierto de gloria: el enemigo ha hecho esfuerzos supremos por apoderarse del Cerro de Guadalupe, que atacó por el oriente de izquierda y derecha durante tres horas: fue rechazado tres veces en completa dispersión y en estos momentos está formado en batalla, fuerte de más de 4,000 hombres, frente al cerro de Guadalupe, fuera de tiro. No lo bato, como desearía, porque el Gobierno sabe (que) no tengo para ello fuerza bastante. Calculo la pérdida del enemigo, que llegó hasta los fosos de Guadalupe en su ataque, en 600 o 700 entre muertos y heridos; 400 habremos tenido nosotros. Sírvase vd. dar cuenta de este parte al C. Presidente.— I. Zaragoz</p>
+<iframe width="60%" height="60%" src="https://www.youtube.com/embed/_mCwYSGgD0Q" frameborder="0" allowfullscreen></iframe>
+<img src="imagenes/baa.jpg" width="46%" height="46%">
+  </div>
+ </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<h4>Aplicacion siete</h4>
+ </div>
+<div>
+<img src="imagenes/mdpi.png" width="46" height="46">
+  <h4>NOHEMI PEREZ PAREDES</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CUATRO DE MAYO</h1>
+    </div>
+   <div data-role="content" align="center">
+   <div>
+    <p> La Batalla tuvo lugar el 4 de mayo de 1862 en las inmediaciones de la Hacienda de las Traperas en Atlixco en el estado de Puebla, México, entre elementos del ejército mexicano de la república, al mando de los generales Antonio Carvajal y Tomás O'Horan contra las tropas al servicio del Segundo Imperio Mexicano comandadas por el general José María Cobos y de Leonardo Márquez, compuesta de soldados conservadores mexicanos en apoyo de envío de refuerzos para llevar a cabo la Batalla de Puebla, durante la Segunda Intervención Francesa en México.
+Esta batalla culminó con una victoria republicana y debido a esto el grupo conservador de Márquez no pudo lograr su objetivo de auxiliar a las tropas francesas del Conde de Lorencez en la batalla de Puebla.</p>
+<img src="imagenes/m.jpg" width="50%" height="50%">
+  </div>
+ </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<h4>Aplicacion siete</h4>
+ </div>
+<div>
+<img src="imagenes/mdpi.png" width="46" height="46">
+  <h4>NOHEMI PEREZ PAREDES</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>COMO SE CELEBRA</h1>
+ </div>
+<div data-role="content" align="center">
+<div>
+     <div data-role="collapsible" data-content-theme="false">
+   <h1>PRINCIPALES CELEBRACIONES</h1>
+   <div>
+<p>Lo que se festeja el 5 de mayo es la conmemoración de la victoria mexicana en la Batalla de Puebla, en la cual, por primera vez en la historia, las fuerzas del ejército mexicano pudo derrotar a una fuerza extranjera más capacitada y mejor preparada como las potentes líneas de Francia. Esta batalla se desarrolló el 5 de mayo del año 1862, en Puebla, actual ciudad de Puebla de Zaragoza, una de las más importantes regiones metropolitanas de México.</p>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('actualizada','','imagenes/ceee.jpg',1)"><img src="imagenes/ce.jpg" width="46%" height="46%" id="actualizada"></a> </div>
+    </div>
+  
+   <div data-role="collapsible" data-content-theme="false">
+   <h1>CELEBRACION ACTUALIZADA.</h1>
+   <div>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('celeb','','imagenes/t.jpg',1)"><img src="imagenes/cele.jpg" width="50%" height="50%" id="celeb"></a>
+<p>En EUA Estados Unidos tiene una gran población de origen mexicano y allí, el 5 de mayo se celebra e interpreta como el “Día de la Cultura Mexicana”, especialmente en aquellas regiones con más cantidad de habitantes mexicanos, con mayor herencia mexicana. Numerosos y coloridos desfiles, alegres fiestas, recitales de música de mariachi, bailes folklóricos y platillos tradicionales, como tacos y el mole poblano son algunos de los elementos que caracterizan los festejos de este día.</p>
+  <img src="imagenes/oo.jpg" width="50%" height="50%">
+  Cada 5 de mayo se conmemora la Batalla de Puebla, suceso histórico de 1862, que consistió en el ataque y defensa del Fuerte de Loreto y del Fuerte de Guadalupe, durante la invasión francesa de México, donde el Ejército Mexicano derrotó al Ejército Francés, dando buena fama al país.
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('h','','imagenes/mayy.jpg',1)"><img src="imagenes/may.jpg" width="50%" height="50%" id="h"></a> </div>
+   <div>
+    </div>
+ </div>
+ </div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+   <div>
+<h4>Aplicacion siete</h4>
+ </div>
+<div>
+<img src="imagenes/mdpi.png" width="46" height="46">
+  <h4>NOHEMI PEREZ PAREDES</h4>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
